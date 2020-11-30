@@ -18,21 +18,7 @@
       function thisFunction() {
         alert("This is a website!");
       }
-
-    </script>
-
-  </body>
-
-</html>
-<div class="resultParas">
-  <p class="guesses"></p>
-  <p class="lastResult"></p>
-  <p class="lowOrHi"></p>
-</div>
-
-<label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-<input type="submit" value="Submit guess" class="guessSubmit">
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+      let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
@@ -74,6 +60,19 @@ function checkGuess() {
   guessField.focus();
 }
 
+
 checkGuess();
 guessSubmit.addEventListener('click', checkGuess);
+
+
+    </script>
+</html>
+<div class="resultParas">
+  <p class="guesses"></p>
+  <p class="lastResult"></p>
+  <p class="lowOrHi"></p>
+</div>
+
+
+  </body>
 
